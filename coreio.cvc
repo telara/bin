@@ -1,0 +1,24 @@
+#include "civic.h"
+
+export int fibs(int n) {
+    int fib1 = 0; 
+    int fib2 = 1;
+    int fib3;
+    int count = 0;
+    /* fib1 and fib2 are already used */
+    while (count < n) {
+        fib3 = fib1 + fib2;
+        count = count + 1;
+        printNewlines(1);
+        printInt(fib3);
+        printNewlines(1);
+        fib1 = fib2;
+        fib2 = fib3;
+    }
+    return 0;
+}
+
+export int primes(int n) {
+
+    return 0;
+}

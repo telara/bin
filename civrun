@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+for f in $*; do
+    $DIR/civcc -o $f.s $f &&
+    $DIR/civas -o $f.o $f.s
+done
+$DIR/civvm *.o
+ret_val=$?
+rm -f *.s *.o
+exit $ret_val

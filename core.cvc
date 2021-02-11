@@ -1,0 +1,31 @@
+/* #include <stdlib.h> */
+
+export int gcd(int a, int b) {
+    return a % b;
+}
+
+export int fac(int n) {
+    if (n == 0)
+        return 1;
+    else
+        return n * fac(n - 1);
+    return 2;
+}
+
+export int fib(int n) {
+/* TODO: do we count 1 twice or not? Alter fibs(n) */
+    if (n <= 2)
+        return n;
+    return fib(n-1) + fib(n-2);
+}
+
+export bool isprime(int n) {
+    if (n <= 1)
+        return false;
+ 
+    /* Check from 2 to n-1 */
+    for (int i = 2, n-1)
+        if (n % i == 0)
+            return false;
+    return true;
+}
