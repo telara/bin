@@ -70,3 +70,22 @@ Some other remarks about the compiler:
   (peephole optimization) strips these comments, so you will need to pass "-v
   2" or -noopt to actually see them. You can also disable them completely by
   passing "-v 0".
+  
+  # My contribution to this this project
+  
+  ## for the purpose of familiarising oneself with the language CiviC
+  
+  - functions:
+    - gcd(a,b)
+    returns the greatest common denominator of a and b
+    - fac(n)
+    returns the factorial of n
+    - fib(n)
+    returns the n-th Fibonacci number
+    - isprime(n)
+    returns true if n is a prime number and false otherwise.
+    - fibs(n)
+    print first n Fibonacci numbers
+    - primes(n)
+    print first n prime numbers
+
