@@ -6,3 +6,52 @@ export void printIntVec(int[n] vec)
         printNewlines(1);
     }
 }
+
+export void printFloatVec(float[n] vec)
+{
+    for (int i = 0, n)
+    {
+        printFloat(vec[i]);
+        printNewlines(1);
+    }
+}
+
+export void printIntMat(int[m, n] mat)
+{
+    for (int i = 0, m)
+    {
+        for (int j = 0, n)
+        {
+            printInt(mat[i, j]);
+            printNewlines(1);
+        }
+    }
+}
+
+export void printFloatMat(float[m, n] mat)
+{
+    for (int i = 0, m)
+    {
+        for (int j = 0, n)
+        {
+            printFloat(mat[i, j]);
+            printNewlines(1);
+        }
+    }
+}
+
+export void scanIntVec(int[n] vec)
+{
+    int[n] scannedIntVec;
+    for (int i = 0, n)
+        scannedIntVec[i] = scanInt();
+    printIntVec(scannedIntVec);
+}
+
+export void scanFloatVec(float[n] vec)
+{
+    float[n] scannedFloatVec;
+    for (int i = 0, n)
+        scannedFloatVec[i] = scanFloat();
+    printFloatVec(scannedFloatVec);
+}
