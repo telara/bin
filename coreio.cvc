@@ -1,33 +1,20 @@
 #include "civic.h"
+#include "core.h"
 
 export int fibs(int n) {
-    int fib1 = 0; 
-    int fib2 = 1;
     int fib3;
-    int count = 0;
-    /* fib1 and fib2 are already used */
-    while (count < n) {
-        fib3 = fib1 + fib2;
-        count = count + 1;
+    for (int i = 1, n) {
+        fib3 = fib(i);
         printNewlines(1);
         printInt(fib3);
         printNewlines(1);
-        fib1 = fib2;
-        fib2 = fib3;
     }
     return 0;
 }
 
 export int primes(int n) {
-    bool isaprime;
     for (int i = 2, n) {
-        isaprime = true;
-        for (int j = 2, i-1) {
-            if (i % j == 0) {
-                isaprime = false;
-            }
-        }
-        if (isaprime == true) {
+        if (isprime(i) == true) {
             printInt(i);
             printNewlines(1);
         }
