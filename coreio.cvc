@@ -1,9 +1,11 @@
 #include "civic.h"
 #include "core.h"
 
-export int fibs(int n) {
+export int fibs(int n)
+{
     int fib3;
-    for (int i = 1, n) {
+    for (int i = 1, n)
+    {
         fib3 = fib(i);
         printNewlines(1);
         printInt(fib3);
@@ -12,9 +14,17 @@ export int fibs(int n) {
     return 0;
 }
 
-export int primes(int n) {
-    for (int i = 2, n) {
-        if (isprime(i) == true) {
+export int primes(int n)
+{
+    /* TODO: nested function isPrime(i) which is a clone */
+    bool isPrime(int n)
+    {
+        return isprime(n);
+    }
+    for (int i = 2, n)
+    {
+        if (isPrime(i) == true)
+        {
             printInt(i);
             printNewlines(1);
         }

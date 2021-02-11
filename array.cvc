@@ -1,0 +1,8 @@
+export void printIntVec(int[n] vec)
+{
+    for (int i = 0, n)
+    {
+        printInt(vec[i]);
+        printNewlines(1);
+    }
+}
