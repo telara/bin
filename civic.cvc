@@ -3,25 +3,23 @@
 #include "coreio.h"
 
 export int main() { 
-    isprime(23);
-    printNewlines(1);
-
-    printBool(true);
-
-    printInt(1);
-    printNewlines(1);
+    isprime(23); printNewlines(1);
     
-    printInt(gcd(7, 4));
-    printNewlines(1);
+    printInt(testisprime(17)); printNewlines(1);
+
+    printFloat(42.0); printNewlines(1);
+
+    printInt(1); printNewlines(1);
     
-    printInt(fac(3));
-    printNewlines(1);
+    printInt(gcd(7, 4)); printNewlines(1);
+    
+    printInt(fac(3)); printNewlines(1);
 
-    printInt(fib(10));
-    printNewlines(1);
+    printInt(fib(10)); printNewlines(1);
 
-    fibs(10);
-    printNewlines(1);
+    fibs(10); printNewlines(1);
 
-    return 7; 
+    primes(100); printNewlines(1);
+
+    return 0; 
     }
