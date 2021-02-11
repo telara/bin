@@ -88,4 +88,16 @@ Some other remarks about the compiler:
     print first n Fibonacci numbers
     - primes(n)
     print first n prime numbers
+    - printIntVec( int[n] vec) 
+    - printFloatVec( float[n] vec) 
+    print vec to stdout;
+    - printIntMat( int[m,n] mat) 
+    - printFloatMat( float[m,n] mat) 
+    print mat to stdout;
+    - scanIntVec( int[n] vec) 
+    - scanFloatVec( float[n] vec) 
+    scan vec from stdin;
+    - scanIntMat( int[m,n] mat) 
+    - scanFloatMat( float[m,n] mat) 
+    scan mat from stdin;
 

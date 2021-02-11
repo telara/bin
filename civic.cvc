@@ -52,8 +52,10 @@ export int main()
     printNewlines(1);
 
     scanIntVec(intVec);
-
     scanFloatVec(floatVec);
+
+    scanIntMat(intMat);
+    scanFloatMat(floatMat);
 
     return 0;
 }
