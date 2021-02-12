@@ -83,3 +83,18 @@ export void scanFloatMat(float[m, n] mat)
     }
     printFloatMat(scannedFloatMat);
 }
+
+/* multiply two floating point matrices a and b and store result in c 
+*/
+export float matMul(float[m, n] a, float[o, p] b, float[q, l] c)
+{
+    for (int i = 0, m)
+    {
+        for (int j = 0, n)
+        {
+            c[i, j] = a[i, j] * b[i, j];
+        }
+    }
+    printFloatMat(c);
+    return 0.0;
+}

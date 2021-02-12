@@ -100,4 +100,6 @@ Some other remarks about the compiler:
     - scanIntMat( int[m,n] mat) 
     - scanFloatMat( float[m,n] mat) 
     scan mat from stdin;
+    - matMul( float[m,n] a, float[o,p] b, float[q,l] c) 
+    multiply two floating point matrices a and b and store result in c;
 
