@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.cvc": "c",
+        "traverse_helper.h": "c",
+        "traverse.h": "c",
+        "types.h": "c",
+        "stdio.h": "c"
+    }
+}
